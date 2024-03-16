@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="335dp"
+    android:layout_height="95dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Summer Sale"
+        android:textSize="16dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15% OFF"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        android:textColor="#674DC5"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/shoes2"
+        android:layout_marginLeft="200dp"/>
+</RelativeLayout>
