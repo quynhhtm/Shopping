@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F9">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/left"
+        android:background="@drawable/btn_custom"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="#D9D9D9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/layout_information"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_radius"
+        android:backgroundTint="#ffffff"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Information"
+            android:textSize="14dp"
+            android:textColor="#1A2530"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imgEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/edt_radius"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="#F8F9FA"
+                android:src="@drawable/email" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:text="laptrinhdidong@gmail.com"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:gravity="fill_vertical"/>
+
+            <ImageButton
+                android:id="@+id/btnEdit1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#ffffff"
+                android:src="@drawable/editing"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_btnTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imgPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="#1A2530"
+                android:src="@drawable/phone" />
+
+            <TextView
+                android:id="@+id/txtPageName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:text="0123456789"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:gravity="fill_vertical"/>
+
+            <ImageButton
+                android:id="@+id/btnEdit2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#ffffff"
+                android:src="@drawable/editing"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textSize="14dp"
+            android:textColor="#1A2530"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter address"
+            android:textSize="14dp"
+            android:inputType="textPostalAddress">
+            <requestFocus/>
+        </EditText>
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Method"
+            android:textSize="14dp"
+            android:textColor="#1A2530"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radioGroupPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rdbCash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/cash"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="Cash"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rdbCreditCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/credit_card"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="Credit Card"
+                    android:textSize="16sp"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_information">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Subtotal"
+                    android:textColor="#707B81"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtSubtotal"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="$999.99"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Delivery"
+                    android:textColor="#707B81"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtDeleveryCost"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="$60.00"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
+                    android:textColor="#707B81"
+                    android:textSize="16dp" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Total Cost"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtTotalCost"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="$60000.00"
+                    android:textColor="#0D6EFD"
+                    android:textSize="16dp" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Checkout"
+                    android:textSize="14dp"
+                    android:backgroundTint="#0D6EFD"
+                    app:cornerRadius="13dp"
+                    android:textColor="#FFFFFF"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
