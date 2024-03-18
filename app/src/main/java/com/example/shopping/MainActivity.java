@@ -45,8 +45,10 @@ public class MainActivity extends AppCompatActivity {
         rcv_category.setLayoutManager(linearLayoutManager);
         RecyclerView.ItemDecoration decoration = new DividerItemDecoration(this, DividerItemDecoration.VERTICAL);
         rcv_category.setAdapter(categoryAdapter);
-        setContentView(R.layout.activity_favourite);
-        LoadProductFavourite();
+
+
+//        setContentView(R.layout.activity_favourite);
+//        LoadProductFavourite();
 
 
     }
