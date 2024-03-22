@@ -4,34 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1483C2">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="330dp"
-        android:layout_height="278dp"
-        android:layout_marginTop="100dp"
-        android:rotation="-20"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/shoes2" />
+    android:background="@drawable/onboard3">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="342dp"
-        android:layout_height="94dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="314dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="392dp"
         android:text="You Have The Power To"
         android:textAlignment="center"
         android:textColor="#ECECEC"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"

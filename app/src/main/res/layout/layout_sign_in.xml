@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/left"
+        android:background="@drawable/btn_custom"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="#ececec"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="187dp"
+        android:layout_height="45dp"
+        android:text="Hello Again!"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:text="Fill Your Details Or Continue With Social Media"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:textColor="#707B81"
+        app:layout_constraintTop_toBottomOf="@+id/txt1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    
+    <RelativeLayout
+        android:id="@+id/layoutFill"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="106dp"
+            android:layout_height="20dp"
+            android:text="Email Address"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/txtEmail"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edt_radius"
+            android:backgroundTint="#ECECEC"
+            android:paddingLeft="20dp"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/txtPwd"
+            android:layout_width="106dp"
+            android:layout_height="20dp"
+            android:text="Password"
+            android:textSize="16dp"
+            android:layout_below="@+id/edtEmail"
+            android:layout_marginTop="20dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtPwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPwd"
+            android:textSize="14dp"
+            app:passwordToggleEnabled="true"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/hinteye"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_radius"
+                android:backgroundTint="#ECECEC"
+                android:textColorHint="#6A6A6A"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnRecoveryPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recovery Password"
+            android:textColor="#707B81"
+            android:backgroundTint="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/edtPwd"
+            android:layout_alignRight="@+id/edtPwd"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"/>
+        
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#0D6EFD"
+        android:text="Sign In"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        app:cornerRadius="13dp"
+        app:layout_constraintTop_toBottomOf="@+id/layoutFill"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSignUpWGg"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#ECECEC"
+        android:text="Sign In with Google"
+        android:textColor="#2B2B2B"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/google_logo"
+        android:gravity="center_vertical"
+        android:paddingStart="90dp"
+        app:cornerRadius="13dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btnSignUpWGg"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <TextView
+            android:id="@+id/txtNewUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New User?"
+            android:textSize="14dp"
+            android:textColor="#6A6A6A"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@+id/btnNewUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtNewUser"
+            android:backgroundTint="#FFFFFF"
+            android:minWidth="120dp"
+            android:minHeight="40dp"
+            android:text="Create Account"
+            android:textColor="#2B2B2B"
+            android:textSize="14dp"
+            android:padding="4dp"/>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
